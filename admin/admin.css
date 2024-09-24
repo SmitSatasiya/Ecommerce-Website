@@ -1,0 +1,10 @@
+.admin_img {
+    width: 100px;
+    object-fit: contain;
+    padding: 0 !important;
+}
+
+.logo {
+    height: 10%;
+    width: 10%;
+}

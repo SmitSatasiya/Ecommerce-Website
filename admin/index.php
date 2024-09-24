@@ -8,14 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./admin.css">
+    <style>
+        .logo {
+            height: 10%;
+            width: 10%;
+        }
+    </style>
 
 </head>
 
 <body>
     <!-- Navbar -->
     <!-- first Child -->
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
                 <img src="../img/logo1-removebg-preview.png" alt="" class="logo">
@@ -42,7 +48,7 @@
                     <p class="text-light text-center">Admin Name</p>
                 </div>
                 <div class="button text-center mx-5">
-                    <button class="my-3"><a href="" class="nav-link text-light bg-info my-1 px-4 py-1">Insert Products</a></button>
+                    <button class="my-3"><a href="insert_product.php" class="nav-link text-light bg-info my-1 px-4 py-1">Insert Products</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1 px-4 py-1">View Products</a></button>
                     <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1 px-4 py-1">Insert Categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1 px-4 py-1">View Categories</a></button>
@@ -68,8 +74,6 @@
             }
             ?>
         </div>
-
-
 
 
         <!-- Footer -->
