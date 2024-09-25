@@ -83,7 +83,7 @@ include('functions/common_function.php');
 
                     <!-- fetching Products -->
                     <?php
-                    getproducts();
+                    get_all_products();
                     get_unique_categories();
                     get_unique_brands();
                     ?>
@@ -119,9 +119,9 @@ include('functions/common_function.php');
             </div>
         </div>
 
-        <!-- Last Child -->
+        <!-- Footer -->
         <!-- include Footer -->
-         <?php include("./includes/footer.php") ?>
+        <?php include("./includes/footer.php") ?>
     </div>
 
 

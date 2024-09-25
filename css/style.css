@@ -9,3 +9,7 @@
     height: 240px !important;
     object-fit: cover;
 }
+
+.card {
+    width: 50%;
+}
