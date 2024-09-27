@@ -1,6 +1,6 @@
 <?php
 // connect include file
-include('./includes/connect.php');
+// include('./includes/connect.php');
 
 // getting product
 function getproducts()

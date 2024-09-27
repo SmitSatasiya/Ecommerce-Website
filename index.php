@@ -12,6 +12,7 @@ include('functions/common_function.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
+    <!-- Boostrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Font Awesome Link -->
@@ -70,10 +71,10 @@ include('functions/common_function.php');
                     <a class="nav-link active" href="#">Welcome Guest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Login</a>
+                    <a class="nav-link active" href="./user_area/user_login.php">Login</a>
                 </li>
             </ul>
-        </nav>
+        </nav>  
 
         <!-- Third Child -->
         <div class="bg-light">

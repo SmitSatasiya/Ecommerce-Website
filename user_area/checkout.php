@@ -1,7 +1,6 @@
 <!-- connect file -->
 <?php
-include('includes/connect.php');
-include('functions/common_function.php');
+include('../includes/connect.php');
 ?>
 
 
@@ -11,7 +10,7 @@ include('functions/common_function.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Website</title>
+    <title>Ecommerce Website-Checkout Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Font Awesome Link -->
@@ -43,12 +42,6 @@ include('functions/common_function.php');
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"><sup>1</sup></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Total Price:<?php total_cart_price() ?>/-</a>
-                        </li>
                     </ul>
                     <form class="d-flex" action="search_product.php" method="get">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_data">
@@ -65,7 +58,7 @@ include('functions/common_function.php');
                     <a class="nav-link active" href="#">Welcome Guest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./user_area/user_login.php">Login</a>
+                    <a class="nav-link active" href="#">Login</a>
                 </li>
             </ul>
         </nav>
@@ -78,50 +71,22 @@ include('functions/common_function.php');
 
         <!-- Fourth child -->
         <div class="row px-1">
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <div class="row">
-
-                    <!-- fetching Products -->
                     <?php
-                    get_all_products();
-                    get_unique_categories();
-                    get_unique_brands();
-                    ?>
-
+                        if(!isset($_SESSION['username'])){
+                            include('user_login.php');
+                        }else {
+                            include('payment.php');
+                        }
+                     ?>
                 </div>
-            </div>
-
-            <div class="col-md-2 bg-secondary p-0">
-                <!-- brands to be displayed -->
-                <ul class="navbar-nav me-auto text-center">
-                    <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light">
-                            <h4>Delivery Brands</h4>
-                        </a>
-                    </li>
-                    <?php
-                    getbrands();
-                    ?>
-                </ul>
-
-                <!-- categories to be displayed -->
-                <ul class="navbar-nav me-auto text-center">
-                    <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light">
-                            <h4>Categories</h4>
-                        </a>
-                    </li>
-
-                    <?php
-                    getcategories();
-                    ?>
-                </ul>
             </div>
         </div>
 
-        <!-- Footer -->
+        <!-- Last Child -->
         <!-- include Footer -->
-        <?php include("./includes/footer.php") ?>
+        <?php include("../includes/footer.php") ?>
     </div>
 
 

@@ -70,7 +70,7 @@ include('functions/common_function.php');
                     <a class="nav-link active" href="#">Welcome Guest</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Login</a>
+                    <a class="nav-link active" href="./user_area/user_login.php">Login</a>
                 </li>
             </ul>
         </nav>
