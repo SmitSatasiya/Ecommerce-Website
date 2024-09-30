@@ -24,7 +24,7 @@ function getproducts()
                 $brand_id = $row['brand_id'];
 
                 echo " <div class='col-md-4 mb-2'>
-            <div class='card' style='width: 90%; text-align:center; align-item:center;'>
+            <div class='' style='width: 90%; text-align:center; align-item:center;'>
                 <img src='./admin/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                 <div class='card-body'>
                     <h5 class='card-title'>$product_title</h5>
@@ -62,7 +62,7 @@ function get_all_products()
                 $brand_id = $row['brand_id'];
 
                 echo " <div class='col-md-4 mb-2'>
-            <div class='card'>
+            <div class='card1 w-75'>
                 <img src='./admin/product_images/$product_image1' class='card-img-top' alt='$product_title'>
                 <div class='card-body'>
                     <h5 class='card-title'>$product_title</h5>
